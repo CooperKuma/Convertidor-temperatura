@@ -15,20 +15,21 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("¿Cual es la temperatura?");
+        System.out.println("¿Cuál es la temperatura?");
         double temp = sc.nextDouble();
 
 
-        System.out.println("¿Que tipo de temperatura que desea convertir? \n1) Celsius a Farenheit \n2) Fahrenheit a Celsius ");
+        System.out.println("¿Qué tipo de conversión desea realizar?: \n1) Celsius a Farenheit \n2) Fahrenheit a Celsius ");
         int tipo = sc.nextInt();
 
             switch (tipo) {
                 case 1:
-                    System.out.println("La temperatura en Farenheit es de " + ((temp * 1.8) + 32));
+                    System.out.println("La temperatura en Farenheit es de " + ((temp * 1.8) + 32) + "°F");
                     break;
                 case 2:
-                    System.out.println("Fahrenheit a Celsius es de " + ((temp -32) / 1.8 ));
+                    System.out.println("Fahrenheit a Celsius es de " + ((temp -32) / 1.8 ) + "°C");
                     break;
             }
+            sc.close();
     }
 }
